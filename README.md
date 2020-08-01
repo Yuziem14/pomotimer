@@ -1,77 +1,74 @@
-# Project 1 - Pomodoro Timer
-For this project, you'll be implementing a Pomodoro timer. This timer will help
-people trying to use the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique).
-It will vibrate to tell you when to take breaks or resume working, based on some
-determined values. Check out the [staff solution](#staff-solution) for a working
-version.
+![PomoTimer](.github/pomotimer.png)
 
+# PomoTimer :tomato:
 
-## Requirements
-- You may not import libraries other than the below:
-  - `expo`
-  - `react`
-  - `react-native`
-  - `prop-types`
-- Timer should display minutes and seconds in text
-- Timer should count down seconds until it reaches 00:00
-- Phone should buzz when timer reaches 0
-- Timers should switch between 25 and 5 minutes
-- Timer should be able to start, stop, and reset
+> #### :alarm_clock: A simple timer to help you use the pomodoro technique in your daily life.
 
-The aesthetics of the app is up to you!
+[![Author](https://img.shields.io/badge/author-yuziem14-FF4445?style=flat-square)](https://github.com/yuziem14)
+![Version](https://img.shields.io/badge/version-1.0.0-FF4445?style=flat-square)
+[![License](https://img.shields.io/badge/license-MIT-FF4445?style=flat-square)](LICENSE.md)
 
-### Challenge (Not Required)
-- Allow the user to input any arbitrary time for the timers (e.g. 5 mins of work time and 5 mins of break)
+> This project was build during the **CS50's Mobile App Development with React Native** course promoted by [Harvard University](https://www.edx.org/course/cs50s-mobile-app-development-with-react-native)
 
-## Getting Started
-First, head to [this link](https://docs.expo.io/versions/latest/introduction/installation.html)
-to install Expo. You'll need the XDE for your computer and the mobile client
-(Expo app) on your phone. If you prefer, you can also install the iOS simulator
-(Macs only) and/or the Android emulator.
+# :pushpin: Table of Contents
 
-You'll also need Node.js and NPM installed. You can check if you already have them
-installed by opening a terminal and running `node --version` and `npm --version`.
-If numbers are printed, you're good to go. If not, [install them](https://nodejs.org/en/).
-You'll probably want the LTS version (v8.x.x). NPM will be installed automatically
-when you install node.
+- [Features](#bulb-features)
+- [Requirements](#construction-requirements)
+- [Installation](#white_check_mark-installation)
+- [Quick Start](#rocket-quick-start)
+- [Technologies](#fire-technologies)
+- [Contributing](#robot-contributing)
+- [License](#pencil-license)
 
-After installing those software dependencies, you'll need to install your app's
-"dependencies" (libraries that are required to run the app, such as `react`,
-`react-native`, etc.). Fortunately, it's very easy to do! From a terminal, `cd`
-into this directory and run the command `npm install`. NPM will look at the
-[`package.json`](/package.json) file's `dependencies` key and install those
-libraries, as well as all of those libraries' dependencies (and the dependencies'
-dependencies and so on).
+# :bulb: Features
 
-Now you have everything installed that you need to run the app! Open the Expo
-XDE app and click the `Open existing project...` button. Select the folder that
-contains this file (make sure you have the parent folder and not this file) and
-press `Open`.
+- [x] :unlock: Start timer.
+- [x] :lock: Stop timer.
+- [x] :watch: Resume timer.
+- [x] :sunglasses: Set a custom interval.
+- [x] :clock8: Count rounds
 
-You should now see two panels with logs. The left will output some messeages,
-hopefully including `Dependency graph loaded.`. If you see this message, then
-your app is running (well technically the bundler that serves your app is running).
+# :construction: Requirements
 
-You can now open the app on your phone or simulator by clicking one of the buttons
-in the top right. To open on your phone, click the `Share` button and scan the
-QR code from the Expo app on your phone. To open in a simulator, click the `Device`
-button and select the simulator into which you want to open your app.
+- [x] Git
+- [x] Node.js
+- [x] Expo CLI
 
-When you have the app open in your phone or simulator, try opening [`App.js`](/App.js)
-and changing a line. You should see it update on your phone!
+# :white_check_mark: Installation
 
-You can now begin to work on your app. You may find the vibrate function in
-[`/utils`](/utils) helpful. Feel free to import and use it in your app like this:
+**First check if you have all the requirements above, then clone this repository:**
 
-```javascript
-import {vibrate} from './utils'
+- Using HTTP protocol:
 
-// causes phone to vibrate
-vibrate()
-```
+  - `git clone https://github.com/Yuziem14/pomotimer.git`
 
-Good luck!
+- Using SSH protocol:
+  - `git clone git@github.com:Yuziem14/pomotimer.git`
 
-## Staff Solution
-If you want to play with the staff implementation, you can view it using
-Snack at [@jhhayashi/project1-solution](https://snack.expo.io/@jhhayashi/project1-solution).
+_Obs: Only clone with SSH if you already have a safe SSH key configured._
+
+# :rocket: Quick Start
+Enter in the project root directory, then:
+1. Run `npm install` to install all dependencies.
+1. Run `expo start` to start the app.
+
+_Obs: If you want, use yarn instead of npm._
+
+# :fire: Technologies
+
+This project was build with:
+
+- [Node.js](https://nodejs.org/en/)
+- [React Native](https://reactnative.dev/) + [Expo](https://expo.io/)
+
+# :robot: Contributing
+
+This project is under the MIT license, so feel free to contribute with it.
+
+# :pencil: License
+
+Read the [License](LICENSE.md) for this project.
+
+---
+
+> _Made with :heart: by Yuri Ziemba._
